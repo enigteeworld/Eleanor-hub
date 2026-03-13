@@ -35,7 +35,7 @@ const Navigation = () => {
         { label: 'Trustees', path: '/about#trustees' },
         { label: 'Annual Reports', path: '/reports' },
         { label: 'FAQs', path: '/faqs' },
-      ]
+      ],
     },
     { label: 'Our Causes', path: '/causes' },
     { label: 'Grants', path: '/grants' },
@@ -59,11 +59,11 @@ const Navigation = () => {
             {/* Logo */}
             <Link
               to="/"
-              className="flex items-center"
+              className="flex items-center shrink-0"
               aria-label="Go to homepage"
             >
               <img
-                src="/logo.png"
+                src="/images/logo.png"
                 alt="The Eleanor Harvey Charitable Trust"
                 className="h-12 sm:h-14 w-auto object-contain"
               />
@@ -119,10 +119,7 @@ const Navigation = () => {
                   )}
                 </div>
               ))}
-              <Link
-                to="/grants"
-                className="btn-primary text-sm"
-              >
+              <Link to="/grants" className="btn-primary text-sm">
                 Apply for a grant
               </Link>
             </div>
