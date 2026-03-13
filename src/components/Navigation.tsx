@@ -1,3 +1,5 @@
+// ===== START OF FILE: navigation.tsx =====
+
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
@@ -25,8 +27,8 @@ const Navigation = () => {
 
   const navLinks = [
     { label: 'Home', path: '/' },
-    { 
-      label: 'About', 
+    {
+      label: 'About',
       path: '/about',
       dropdown: [
         { label: 'Our Story', path: '/about' },
@@ -57,13 +59,14 @@ const Navigation = () => {
             {/* Logo */}
             <Link
               to="/"
-              className={`font-serif text-lg sm:text-xl font-semibold transition-colors ${
-                isScrolled || location.pathname !== '/'
-                  ? 'text-[#141414] hover:text-[#D14A2A]'
-                  : 'text-white hover:text-[#D14A2A]'
-              }`}
+              className="flex items-center"
+              aria-label="Go to homepage"
             >
-              The Eleanor Harvey Charitable Trust
+              <img
+                src="/logo.png"
+                alt="The Eleanor Harvey Charitable Trust"
+                className="h-12 sm:h-14 w-auto object-contain"
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -86,7 +89,7 @@ const Navigation = () => {
                         {link.label}
                         <ChevronDown size={14} />
                       </button>
-                      
+
                       {/* Dropdown */}
                       {isAboutDropdownOpen && (
                         <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-xl shadow-xl py-2 z-50">
@@ -186,3 +189,5 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
+// ===== END OF FILE: navigation.tsx =====
