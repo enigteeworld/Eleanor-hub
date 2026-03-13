@@ -1,0 +1,79 @@
+/* App-specific styles */
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section z-index stacking */
+section {
+  position: relative;
+}
+
+/* Hero section specific */
+.hero-strip {
+  will-change: transform, opacity;
+}
+
+/* Card hover effects */
+.cause-card,
+.principle-card {
+  will-change: transform;
+}
+
+/* Button transitions */
+button {
+  will-change: transform;
+}
+
+/* Image loading optimization */
+img {
+  loading: lazy;
+}
+
+/* Responsive typography adjustments */
+@media (max-width: 640px) {
+  .font-serif {
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Ensure proper z-index for pinned sections */
+[style*="position: fixed"] {
+  z-index: 9999;
+}
+
+/* Dialog styling */
+[data-state="open"] {
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Focus states for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #D14A2A;
+  outline-offset: 2px;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
