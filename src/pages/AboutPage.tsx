@@ -32,27 +32,19 @@ const AboutPage = () => {
 
   const trustees = [
     {
-      name: 'Eleanor Harvey',
+      name: 'Eleanor Alice',
       role: 'Founder & Chair',
-      bio: 'Established the trust in 1974 with a vision to support local communities.',
+      bio: 'Established the trust in 1925 with a vision to support local communities.',
     },
     {
-      name: 'James Mitchell',
-      role: 'Vice Chair',
+      name: 'Gregg Latchams',
+      role: 'WRH Executor',
       bio: 'Brings 30 years of experience in charity governance and community development.',
     },
+    
+    
     {
-      name: 'Sarah Thompson',
-      role: 'Treasurer',
-      bio: 'Chartered accountant ensuring responsible stewardship of funds.',
-    },
-    {
-      name: 'Reverend David Chen',
-      role: 'Trustee',
-      bio: 'Community faith leader with deep connections to grassroots organisations.',
-    },
-    {
-      name: 'Dr. Patricia Williams',
+      name: 'Matthew Thurlon',
       role: 'Trustee',
       bio: 'Former social worker dedicated to improving community wellbeing.',
     },
@@ -83,7 +75,7 @@ const AboutPage = () => {
 
   const timeline = [
     {
-      year: '1974',
+      year: '1925',
       title: 'Foundation',
       description: 'Eleanor Harvey establishes the trust with an initial endowment.',
     },
@@ -105,7 +97,7 @@ const AboutPage = () => {
     {
       year: '2024',
       title: '50th Anniversary',
-      description: 'Celebrated 50 years of supporting communities across the UK.',
+      description: 'Celebrated 100 years of supporting communities across the UK.',
     },
   ];
 
@@ -120,7 +112,7 @@ const AboutPage = () => {
               Our Story
             </h1>
             <p className="text-lg lg:text-xl text-white/80 max-w-2xl mx-auto">
-              For over 50 years, The Eleanor Harvey Charitable Trust has been 
+              For over 100 years, The Eleanor Harvey Charitable Trust has been 
               making a difference in communities across the UK.
             </p>
           </div>
@@ -194,7 +186,7 @@ const AboutPage = () => {
           <div className="text-center max-w-3xl mx-auto mb-16 animate-in">
             <span className="eyebrow mb-4 block">OUR HISTORY</span>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#141414] leading-tight">
-              50 years of giving
+              100 years of giving
             </h2>
           </div>
 

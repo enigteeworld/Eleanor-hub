@@ -32,7 +32,7 @@ const Footer = () => {
             </Link>
             <p className="text-[#F6F4EF]/70 mb-6">
               Small grants that open big doors. Supporting grassroots charities 
-              and community projects across the UK for over 50 years.
+              and community projects across the UK for over 100 years.
             </p>
             <div className="flex items-center gap-2 text-[#F6F4EF]/60 text-sm">
               <Heart size={16} className="text-[#D14A2A]" />
