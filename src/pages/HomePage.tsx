@@ -101,7 +101,7 @@ const HomePage = () => {
           </h1>
           <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto mb-10">
             We fund grassroots charities and community projects across the UK.
-            For over 50 years, we've been making a difference.
+            For over 100 years, we've been making a difference.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/grants" className="btn-primary">
@@ -160,7 +160,7 @@ const HomePage = () => {
                 A small trust with a long memory.
               </h2>
               <p className="text-lg text-[#6E6E6E] leading-relaxed mb-8">
-                We've been making modest, targeted grants for over 50 years—supporting 
+                We've been making modest, targeted grants for over 100 years—supporting 
                 local charities, faith groups, and community projects that help people 
                 find stability and purpose.
               </p>
